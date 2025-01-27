@@ -1,3 +1,5 @@
+// Тестовое задание Frontend
+
 import React from "react";
 
 interface Param {
