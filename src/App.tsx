@@ -106,7 +106,9 @@ export function App() {
   const [model, setModel] = React.useState<Model>();
   const paramEditorRef = React.createRef<ParamEditor>();
   const updateModel = () => {
-    setModel(paramEditorRef.current?.getModel());
+    if (paramEditorRef.current) {
+      setModel(paramEditorRef.current.getModel());
+    }
   }
 
   return (
